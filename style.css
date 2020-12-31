@@ -1,0 +1,214 @@
+/* background created with this tool: https://cssgradient.io/ */
+
+body {
+  font-family: 'Courier New', Courier, monospace;
+  height: 1031vh;
+  /*hard coded for now so gradient effect appears*/
+  /* this super long line is just parameters for drawing the background gradient */
+  background-image: linear-gradient(180deg, rgba(254, 212, 59, 1) 0%, rgba(255, 251, 198, 1) 59%, rgba(250, 219, 132, 1) 67%, rgba(255, 186, 136, 1) 71%, rgba(255, 142, 178, 1) 75%, rgba(177, 121, 177, 1) 82%, rgba(139, 112, 154, 1) 84%, rgba(14, 69, 87, 1) 92%, rgba(2, 0, 36, 1) 100%);
+}
+
+/* width */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+
+::-webkit-scrollbar-track {
+  background: linear-gradient(180deg, rgba(254, 212, 59, 1) 0%, rgba(255, 251, 198, 1) 59%, rgba(250, 219, 132, 1) 67%, rgba(255, 186, 136, 1) 71%, rgba(255, 142, 178, 1) 75%, rgba(177, 121, 177, 1) 82%, rgba(139, 112, 154, 1) 84%, rgba(14, 69, 87, 1) 92%, rgba(2, 0, 36, 1) 100%);
+}
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+#header h1 {
+  /* setting font properties */
+  font-size: 5em;
+  font-weight: 600;
+  /* moves title downwards */
+  transform: translate(0, 70vh);
+  /*bit hacky, figure this out later*/
+  /*centers title */
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+  /*used float right earlier so gotta clear right*/
+  clear: right;
+}
+
+.panel img {
+  height: 80vh;
+}
+
+#panel1 {
+  height: 50vh;
+  transform: translate(10vw, 8vh);
+}
+
+#panel2 {
+  float: right;
+  transform: translate(-10vw, 20vh);
+}
+
+#wakingUp1 {
+  position: relative;
+  left: 15vw;
+  top: 42vh;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-weight: 900;
+  font-size: 48px;
+}
+
+#wakingUp2 {
+  position: relative;
+  left: 25vw;
+  top: 60vh;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-weight: 900;
+  font-size: 64px;
+}
+
+#wakingUp3 {
+  position: relative;
+  left: 5vw;
+  top: 65vh;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-weight: 900;
+  font-size: 24px;
+}
+
+#wakingUp4 {
+  position: relative;
+  left: 40vw;
+  top: 68vh;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-weight: 900;
+  font-size: 36px;
+}
+
+#wakingUp5 {
+  position: relative;
+  left: 82vw;
+  top: 30vh;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-weight: 900;
+  font-size: 36px;
+}
+
+#walking1 {
+  position: relative;
+  left: 6vw;
+  top: 42vh;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-weight: 900;
+  font-size: 46px;
+}
+
+#walking2 {
+  position: relative;
+  left: 55vw;
+  top: 60vh;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-weight: 900;
+  font-size: 64px;
+}
+
+#walking3 {
+  position: relative;
+  left: 2vw;
+  top: 65vh;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-weight: 900;
+  font-size: 24px;
+}
+
+#walking4 {
+  position: relative;
+  left: 72vw;
+  top: 113vh;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-weight: 900;
+  font-size: 30px;
+}
+
+#meeting {
+  position: relative;
+  left: 73vw;
+  top: 118vh;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-weight: 900;
+  font-size: 36px;
+}
+
+#bye1 {
+  color: white;
+  position: relative;
+  left: 4vw;
+  top: 0vh;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-weight: 900;
+  font-size: 30px;
+}
+
+#bye2 {
+  color: white;
+  position: relative;
+  left: 75vw;
+  top: 10vh;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-weight: 900;
+  font-size: 48px;
+}
+
+#turnoff {
+  color: white;
+  position: relative;
+  left: 3vw;
+  top: -30vh;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-weight: 900;
+  font-size: 30px;
+}
+
+.panelCenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 23vh;
+  transform: translate(0, 107vh)
+}
+
+.hidden {
+  display: none;
+}
+
+/*parllax scrolling*/
+
+.rellax {
+  color: #424241;
+}
