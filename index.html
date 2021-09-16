@@ -1,61 +1,90 @@
 <!DOCTYPE html>
 
 <head>
-	<meta charset="utf-8" />
-	<script src="jquery-3.5.1.min.js"></script>
-	<script src="script.js"></script>
-	<!---important here i think if we want the emoji title-->
-	<title>📺🧍‍♂️❤️</title>
-	<link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <script src="jquery-3.5.1.min.js"></script>
+  <script src="script.js"></script>
+  <!---important here i think if we want the emoji title-->
+  <title>📺🧍‍♂️❤️</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-	<div class="panel">
-		<img src="./Images/panel1.png" id="panel1">
-	</div>
-	<div class="panel">
-		<p class="rellax" id ="wakingUp1" data-rellax-speed="-4">z z z z z</p>
-		<p class="rellax" id ="wakingUp2" data-rellax-speed="-3">z z z z z z</p>
-		<p class="rellax" id ="wakingUp3" data-rellax-speed="-2">z z z z</p>
-		<p class="rellax" id ="wakingUp4" data-rellax-speed="-2">z z z z z</p>
-		<p class="rellax" id ="wakingUp5">z z z z z z</p>
-		<img src="./Images/panel2.png" id="panel2">
-	</div>
-	<div id="header">
-		<h1>The Daily Life of JackBob</h1>
-	</div>
-	<div class="panel">
-		<p class="rellax" id ="walking1" data-rellax-speed="-4">"I need coffee..."</p>
-		<p class="rellax" id ="walking2" data-rellax-speed="-3">"MOAR SLEP PLES..."</p>
-		<p class="rellax" id ="walking3" data-rellax-speed="-2">"What a beautiful morning!"</p>
-		<p class="rellax" id ="walking4" data-rellax-speed="-2">"Wait...(゜ロ゜)<br>I DIDN'T DO MY READING!"</p>
-		<img src="./Images/panel3.png" class="panelCenter">
-	</div>
+  <div class="panel panel1Div">
+    <img src="./Images/panel1.png" id="panel1" />
+  </div>
+  <div class="panel panel2Div">
+    <p class="rellax wakingUp" id="wakingUp1" data-rellax-speed="-1">
+      z z z z z
+    </p>
+    <p class="rellax wakingUp" id="wakingUp2" data-rellax-speed="-3">
+      z z z z z z
+    </p>
+    <p class="rellax wakingUp" id="wakingUp3" data-rellax-speed="-2">z z z z</p>
+    <p class="rellax wakingUp" id="wakingUp4" data-rellax-speed="3">
+      z z z z z
+    </p>
+    <p class="rellax wakingUp" id="wakingUp5">z z z z z z</p>
+    <p class="rellax wakingUp" id="wakingUp6" data-rellax-speed="4">
+      z z z z z
+    </p>
+    <p class="rellax wakingUp" id="wakingUp7" data-rellax-speed="5">
+      z z z z z
+    </p>
 
-	<div class="panel">
-		<p class="rellax" id ="meeting" data-rellax-speed="-1">[°o°] must help!!</p>
-		<img src="./Images/panel4.png" class="panelCenter">
-	</div>
-	<div class="panel">
-		<img src="./Images/panel5.png" class="panelCenter">
-	</div>
-	<div class="panel">
-		<img src="./Images/panel6.png" class="panelCenter">
-	</div>
-	<div class="panel">
-		<p class="rellax" id ="bye1" data-rellax-speed="-2">[*´∇｀*] yumyum candy</p>
-		<p class="rellax" id ="bye2" data-rellax-speed="-2">bye bye!!</p>
-		<img src="./Images/panel7.png" class="panelCenter">
-	</div>
-	<div class="panel">
-		<p class="rellax" id ="turnoff" data-rellax-speed="-2">Click me to switch me off!</p>
-		<img id ="offPanel" src="./Images/panel8static.png" class="panelCenter" onclick="switchGif();">
-	</div>
+    <img src="./Images/panel2.png" id="panel2" />
+  </div>
+  <div id="header">
+    <h1>The Daily Life of JackBob</h1>
+  </div>
+  <div class="panel panelCenterDiv">
+    <p class="rellax walking" id="walking1" data-rellax-speed="-2">
+      "I need coffee..."
+    </p>
+    <p class="rellax walking" id="walking2" data-rellax-speed="-1">
+      "MOAR SLEP PLES..."
+    </p>
+    <p class="rellax walking" id="walking3" data-rellax-speed="-1">
+      "What a beautiful morning!"
+    </p>
+    <p class="rellax walking" id="walking4" data-rellax-speed="-2">
+      "Wait...(゜ロ゜)<br />I DIDN'T DO MY READING!"
+    </p>
+    <img src="./Images/panel3.png" class="panelCenter" />
+  </div>
 
-	<script src="rellax.min.js"></script>
-	<script>
-		// Accepts any class name
-		var rellax = new Rellax('.rellax');
-	</script>
+  <div class="panel panelCenterDiv">
+    <p class="rellax" id="meeting" data-rellax-speed="-1">[°o°] must help!!</p>
+    <img src="./Images/panel4.png" class="panelCenter" />
+  </div>
+  <div class="panel panelCenterDiv">
+    <img src="./Images/panel5.png" class="panelCenter" />
+  </div>
+  <div class="panel panelCenterDiv">
+    <img src="./Images/panel6.png" class="panelCenter" />
+  </div>
+  <div class="panel panelCenterDiv">
+    <p class="rellax bye" id="bye1" data-rellax-speed="-2">
+      [*´∇｀*] yumyum candy
+    </p>
+    <p class="rellax bye" id="bye2" data-rellax-speed="-2">bye bye!!</p>
+    <img src="./Images/panel7.png" class="panelCenter" />
+  </div>
+  <div class="panel panelCenterDiv">
+    <p class="rellax" id="turnoff" data-rellax-speed="-2">
+      Click me to switch me off!
+    </p>
+    <img
+      id="offPanel"
+      src="./Images/panel8static.png"
+      class="panelCenter"
+      onclick="switchGif();"
+    />
+  </div>
 
+  <script src="rellax.min.js"></script>
+  <script>
+    // Accepts any class name
+    var rellax = new Rellax(".rellax");
+  </script>
 </body>
